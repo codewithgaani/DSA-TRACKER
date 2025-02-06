@@ -4,6 +4,8 @@
   <a href="https://www.naukri.com/code360/profile/164ed442-09f7-45e7-a947-ee0aec6387a0"><img alt="Naukri" src="https://img.shields.io/badge/Naukri-Profile-blue?style=flat&logo=naukri&logoColor=white"/></a>
   <a href="https://leetcode.com/KRISHNABHATT69/"><img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-KRISHNABHATT69-ffa116?style=flat&logo=leetcode&logoColor=black"/></a>
 </p>
+<a href="https://auth.geeksforgeeks.org/user/bhattkrid128/profile"><img alt="GeeksforGeeks" src="https://img.shields.io/badge/GeeksforGeeks-bhattkrid128-green?style=flat&logo=geeksforgeeks"/></a>
+</p>
 
 
 # DSA Practice Repository
