@@ -33,4 +33,7 @@ int main(){
         cout<<arr[i]<<" ";
     }
 }
-//TC: O(N^2) BEST AVERAGE AND WORST
+// Time Complexity:
+// Best Case (Already Sorted): O(n²) (Still scans for minimum)
+// Worst Case (Reversed Array): O(n²)
+// Space Complexity: O(1) (Sorting in-place)

@@ -1,0 +1,63 @@
+import java.util.Scanner;
+class studentdetails{
+	String name;
+	int rollnumber;
+	int grade[];
+	studentdetails(String n,int rn,int g) {
+		this.name=n;
+		this.rollnumber=rn;
+		this.grade=new int [g];
+	}
+	double calaverage(){
+		double sum=0.0;
+		for(int i=0;i<grade.length;i++) {
+			sum+=grade[i];
+		}
+		return (grade.length==0)?0.0:sum/grade.length;
+	}
+	void inputGrades(Scanner sc) {
+        System.out.println("Enter grades for " + name + ":");
+        for (int i = 0; i < grade.length; i++) {
+            System.out.print("Subject " + (i + 1) + ": ");
+            grade[i] = sc.nextInt();
+        }
+	}
+	void display() {
+		 System.out.println("Name: " + name + ", Roll Number: " + rollnumber);
+	        System.out.print("Grades: ");
+	        for(int g:grade) {
+	        	System.out.print(g+" ");
+	        }
+	        System.out.println("\nAverage grade:"+calaverage());
+	        System.out.println("--------------------");
+	}
+}
+public class student {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		 System.out.print("Enter the number of students: ");
+		 int ns=sc.nextInt();
+		 sc.nextLine();
+ 
+		 studentdetails []stu=new studentdetails[ns];
+		 for(int i=0;i<ns;i++) {
+			 System.out.println("\nEnter details for student " + (i + 1) + ":");
+
+	            System.out.print("Name: ");
+	            String name = sc.nextLine();
+
+	            System.out.print("Roll Number: ");
+	            int rollNumber = sc.nextInt();
+
+	            System.out.print("Number of Subjects: ");
+	            int numSubjects = sc.nextInt();
+	            stu[i]=new studentdetails(name,rollNumber,numSubjects);
+	            stu[i].inputGrades(sc);
+		 }
+		 for (studentdetails student : stu) {
+	            student.display();
+	        }
+		 sc.close();
+	}
+
+}
